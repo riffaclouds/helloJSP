@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+}
+
+.converter{
+	border: solid black 1px;
+	width: 350px;
+	height: 150px;
+	text-align: center;
+	border-radius: 8px;
+	padding: 0px;
+	margin: 0px;
+	}
+
+.bar{
+	background-color: #800000;
+	color: white;
+	border-style: hidden;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	}
+	
+.input {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+    border: collapse;
+    
+
+
+	}

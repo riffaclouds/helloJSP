@@ -69,7 +69,7 @@
 	</table>
 	
 	<br>
-	<a href="http://192.168.1.104:8080/helloJSP/op01.jsp">Previous</a>
-	<a href="http://192.168.1.104:8080/helloJSP/op03.jsp">Next</a>
+	<a href="http://localhost:8080/helloJSP/op01.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op03.jsp">Next</a>
 	</body>
 </html>

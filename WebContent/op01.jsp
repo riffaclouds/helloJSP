@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>JSP opdrachten</title>
+<link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
+	<a href="http://localhost:8080/helloJSP/zero.jsp">&larr;</a>
+	<a href="http://localhost:8080/helloJSP/op02.jsp">&rarr;</a>
 	<h1>Opdracht 1: valuta deling</h1>
 	<%
 	String name1 = "Refat Oemar";
@@ -21,15 +23,15 @@
 	%>
 	
 	<p>
-	<%=name1%> krijgt <%=bedrag1 += bedragP%><br>
-	<%=name2%> krijgt <%=bedrag2 += bedragP%><br>	
-	<%=name3%> krijgt <%=bedrag3 += bedragP%><br>
-	<%=name4%> krijgt <%=bedrag4 += bedragP%><br><br><br>
-	bedrag1 > <%=bedrag1%><br>
-	bedragPart > <%=bedragP%><br>
-	bedragTotal > <%=bedragT%><br><br>
-	<a href="http://192.168.1.104:8080/helloJSP/zero.jsp">Previous</a>
-	<a href="http://192.168.1.104:8080/helloJSP/op02.jsp">Next</a>	
+	<%=name1%> krijgt &euro;<%=bedrag1 += bedragP%><br>
+	<%=name2%> krijgt &euro;<%=bedrag2 += bedragP%><br>	
+	<%=name3%> krijgt &euro;<%=bedrag3 += bedragP%><br>
+	<%=name4%> krijgt &euro;<%=bedrag4 += bedragP%><br><br><br>
+	bedrag1 &rarr; &euro;<%=bedrag1%><br>
+	bedragPart &rarr; &euro;<%=bedragP%><br>
+	bedragTotal &rarr; &euro;<%=bedragT%><br><br>
+	<a href="http://localhost:8080/helloJSP/zero.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op02.jsp">Next</a>	
 	</p>
 </body>
 </html>

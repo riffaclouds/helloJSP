@@ -72,7 +72,7 @@
 	
 	
 	<br><br>
-	<a href="http://192.168.1.104:8080/helloJSP/op06.jsp">Previous</a>
-	<a href="http://192.168.1.104:8080/helloJSP/op08.jsp">Next</a>
+	<a href="http://localhost:8080/helloJSP/op06.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op08.jsp">Next</a>
 	</body>
 </html>

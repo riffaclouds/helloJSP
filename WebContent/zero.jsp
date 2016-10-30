@@ -12,7 +12,7 @@
 	the current time and date is: <%=new java.util.Date() %> </p><br><br><br>
 	
 	<br><br>
-	<a href="http://192.168.1.104:8080/helloJSP/op10.jsp">Previous</a>
-	<a href="http://192.168.1.104:8080/helloJSP/op01.jsp">Next</a>
+	<a href="http://localhost:8080/helloJSP/op11.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op01.jsp">Next</a>
 </body>
 </html>

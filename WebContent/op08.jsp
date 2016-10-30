@@ -64,7 +64,7 @@
 	</table>
 	
 	<form action = "op08.jsp" method = "get">
-		<input type = "hidden" name = "f1" value = "<%=tafelGetal %>">
+		<input type = "hidden" name = "f1" value ="<%=tafelGetal%>" onfocus="if(this.value=='0') this.value='';">
 		<input type = "submit" name = "min" value = "-">
 		<input type = "submit" name = "plus" value = "+">	
 	</form>
@@ -76,7 +76,7 @@
 	
 		
 	<br><br>
-	<a href="http://192.168.1.104:8080/helloJSP/op07.jsp">Previous</a>
-	<a href="http://192.168.1.104:8080/helloJSP/op10.jsp">Next</a>
+	<a href="http://localhost:8080/helloJSP/op07.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op10.jsp">Next</a>
 	</body>
 </html>
