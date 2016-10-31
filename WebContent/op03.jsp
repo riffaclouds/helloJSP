@@ -3,8 +3,11 @@
 	<body>
 	<head>
 		<title>helloJSP! JSP opdrachten</title>
+		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
 	<%@ page import="java.util.*" %>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op02.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op04.jsp">&rarr;</a>
 	<h1>Opdracht 3: </h1>
 	<%  
 		

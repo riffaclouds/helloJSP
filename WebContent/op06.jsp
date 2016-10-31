@@ -15,12 +15,15 @@
 		
 		
 		</style>
+		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
 	<body>
 	<head>
 		
 		<title>helloJSP! JSP opdrachten</title>
 	</head>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op05.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op07.jsp">&rarr;</a>
 	<h1>Opdracht 6: Tafel van  5</h1>
 	
 	<table>

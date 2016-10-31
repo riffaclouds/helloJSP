@@ -26,7 +26,10 @@
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>helloJSP! JSP opdrachten</title>
+		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op04.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op06.jsp">&rarr;</a>
 	<h1>Opdracht 5: Chessboard</h1>
 	
 	<table id="chessboard">

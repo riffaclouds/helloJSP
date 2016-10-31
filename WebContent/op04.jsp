@@ -4,7 +4,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>helloJSP! JSP opdrachten</title>
-	</head>
+		<link rel="stylesheet" type="text/css" href="design.css">	
+	</head>	
+	<a class="arrow" href="http://localhost:8080/helloJSP/op03.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op05.jsp">&rarr;</a>
 	<h1>Opdracht 4: Fibonacci cijfers</h1>
 	<%
 	long arg0 = 0L;

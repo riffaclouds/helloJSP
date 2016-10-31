@@ -1,7 +1,23 @@
-a {
-    text-decoration: none;
+body{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	
 }
 
+.arrow{
+	text-decoration: none;
+	
+}
+.arrow:hover{
+	text-decoration: underline;
+	color: #32c524;
+	
+}
+a:visited{
+	color: blue;
+	
+}
 .converter{
 	border: solid black 1px;
 	width: 350px;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
 			<style>
 		table {
     		font-family: arial, sans-serif;
@@ -22,13 +23,15 @@
     		background-color: #dddddd;
 }
 		tr:nth-child(odd) {
-    		background-color: #ffffff;
+    		background-color: white;
 }
 
 		</style>
 		<title>JSP opdrachten</title>
 	</head>
 	<body>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op01.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op03.jsp">&rarr;</a>
 	<h1>Opdracht 2: The Time Table</h1>
 	<%
 	int sec = 1;

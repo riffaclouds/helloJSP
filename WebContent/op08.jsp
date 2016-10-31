@@ -4,17 +4,8 @@
 	<head></head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>helloJSP! JSP opdrachten</title>
-	</head>
-	<h1>Opdracht 8/9: User controlled, multiplication table</h1>
-	<%--
-	//check welke knop bezoeker heeft geklikt
-	if (request.getParameter("b1") != null) {
-    	//haal de parameter(s) binnen
-    	String invoer = request.getParameter("f1");
-    	int getal = Integer.parseInt(invoer);
-    	getal = 1;
-	}
-	--%>	
+		<link rel="stylesheet" type="text/css" href="design.css">
+	</head>	
 	<%
 	boolean showTable = false;
 	String invoer;
@@ -41,9 +32,10 @@
 	
 	
 	%>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op07.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op10.jsp">&rarr;</a>
 	
-	
-	
+	<h1>Opdracht 8/9: User controlled, multiplication table</h1>
 	<form action = "op08.jsp" method = "get">
 		<input type = "text" name = "f1" value = "<%=tafelGetal %>"><br>
 		<p><%=foutBoodschap %></p>
@@ -70,11 +62,7 @@
 	</form>
 	<% 
 	}
-	%>
-	
-	
-	
-		
+	%>	
 	<br><br>
 	<a href="http://localhost:8080/helloJSP/op07.jsp">Previous</a>
 	<a href="http://localhost:8080/helloJSP/op10.jsp">Next</a>

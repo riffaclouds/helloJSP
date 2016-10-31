@@ -4,9 +4,8 @@
 	<head>
 		
 		<title>helloJSP! JSP opdrachten</title>
+		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
-	<h1>Opdracht 10: result page</h1>
-	
 	<%
 	boolean show = false;
 	String invoer="";
@@ -14,9 +13,6 @@
 	double fahrenheit = 0;
 	int result = 0;
 	String foutBoodschap = "";
-	
-	
-	
 	String but = request.getParameter("button");
 	
 	if(request.getParameter("button") != null
@@ -37,8 +33,10 @@
 	}
 	%>
 	<%if(show){ %>
-		
-	<p>hieronder staat het resultaat:</p>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op08.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op11.jsp">&rarr;</a>
+	<h1>Opdracht 10: result page</h1>
+	<p>hier onder staat het resultaat:</p>
 	<p><%=celsius%> &#8451; is:&rarr; <%=result%> &#8457; </p>
 	
 	

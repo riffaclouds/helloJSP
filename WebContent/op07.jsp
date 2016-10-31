@@ -30,13 +30,16 @@
 		
 		
 		</style>
+		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
 	<body>
 	<head>
 		
 		<title>helloJSP! JSP opdrachten</title>
 	</head>
-	<h1>Opdracht 6: Multiplication Table</h1>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op06.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op08.jsp">&rarr;</a>
+	<h1>Opdracht 7: Multiplication Table</h1>
 	
 	<table>
 	<tr>	
