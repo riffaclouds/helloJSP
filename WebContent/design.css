@@ -7,11 +7,11 @@ body{
 
 .arrow{
 	text-decoration: none;
-	
+	font-weight: bold;
 }
 .arrow:hover{
 	text-decoration: underline;
-	color: #32c524;
+	color: #cc0000;
 	
 }
 a:visited{
@@ -42,7 +42,7 @@ a:visited{
     height: 100px;
     margin: 0px;
     border: collapse;
-    
-
-
+	}
+	.error{
+	color: red;
 	}
