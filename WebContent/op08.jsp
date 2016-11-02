@@ -37,7 +37,7 @@
 	
 	<h1>Opdracht 8/9: User controlled, multiplication table</h1>
 	<form action = "op08.jsp" method = "get">
-		<input type = "text" name = "f1" value = "<%=tafelGetal %>"><br>
+		<input type = "text" name = "f1" value = "<%=tafelGetal %>"  onfocus="if(this.value=='<%=tafelGetal %>') this.value='';"><br>
 		<p><%=foutBoodschap %></p>
 		<input type = "submit" name = "knop" value = "Calculate">
 		
@@ -56,7 +56,7 @@
 	</table>
 	
 	<form action = "op08.jsp" method = "get">
-		<input type = "hidden" name = "f1" value ="<%=tafelGetal%>" onfocus="if(this.value=='0') this.value='';">
+		<input type = "hidden" name = "f1" value ="<%=tafelGetal%>">
 		<input type = "submit" name = "min" value = "-">
 		<input type = "submit" name = "plus" value = "+">	
 	</form>
