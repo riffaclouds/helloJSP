@@ -32,8 +32,8 @@ a:visited{
 	background-color: #800000;
 	color: white;
 	border-style: hidden;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
 	}
 	
 .input {

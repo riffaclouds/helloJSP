@@ -7,34 +7,40 @@
 <body>
 	<!-- Mic test 1, 2-->
 	<%
-	String field="";
-	String error="";
 	boolean show = false;
-	int input;
+	
 	int loNum;//=Integer.MAX_VALUE;
 	int hiNum;//=Integer.MIN_VALUE;
+	String error="";
+	if(request.getParameter("lowest") == null){
+		loNum = Integer.MAX_VALUE;
+		hiNum = Integer.MIN_VALUE;
+		
+	} else{
+		loNum = Integer.parseInt(request.getParameter("lowest"));
+		hiNum = Integer.parseInt(request.getParameter("highest"));
+	}
 	
-	if(request.getParameter("knop") != null
-			&& request.getParameter("textField") != null){
-		field = request.getParameter("textField");
-		try{
-			input = Integer.parseInt(field);
+	try{
+		int input = Integer.parseInt(request.getParameter("textField"));
+		
+		if(input < loNum){
+			loNum = input;
 			
-			if(input > hiNum){
-				hiNum = input;
-			}
-			if(input < loNum){
-				loNum = input;
-				
-			}
-						
-			show = true;
-		} catch(NumberFormatException e){
-			error = "Voer een heel getal in(0-9) <strong>" + field + "</strong> is geen heel getal";
 		}
-	
-	}//end of if statement
-	
+		if(input > hiNum){
+			hiNum = input;
+		}
+		
+		show = true;
+	}
+	catch(NumberFormatException e){
+		error = "Voer een heel getal in(0-9) <strong>" + request.getParameter("textField") + "</strong> is geen heel getal";
+	}
+	finally{
+		
+	}
+
 	%>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op10.jsp">&larr;</a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op12.jsp">&rarr;</a>
@@ -47,19 +53,22 @@
 	<input type="hidden" name="highest" value="<%=hiNum%>">
 	<input type="hidden" name="lowest" value="<%=loNum%>">
 	
-	<!-- hier komen de getallen te staan-->
+	<!-- hier onder komen de getallen te staan-->
 	
-	<%if(show){ %>
-	<p>
-	low number: <%=loNum%><br>
-	high number: <%=hiNum%><br>
+	<%if(request.getParameter("knop") != null){ %>
+	<p class="error"><%=error%></p>
 	
-	</p>
+		<%if(loNum != Integer.MAX_VALUE){ %>
+		<p>
+		low number: <%=loNum%><br>
+		high number: <%=hiNum%><br>
 	
+		</p>
 	
+		<%}%>
 	<%}%>
 	
-	<p class="error"><%=error%></p>
+	
 	</form>
 	<br><br>
 	<a href="http://localhost:8080/helloJSP/op10.jsp">Previous</a>
