@@ -10,6 +10,24 @@
 	<h1>Opdracht 12: temperature converter</h1>
 	
 	<!-- JSP magic code -->
+	<%
+	int cels, fahr, result;
+	String error="";
+	if(request.getParameter("button") !=null){
+		try{
+			if(!request.getParameter("celsius").equals("") && !request.getParameter("fahrenheit").equals("")){
+				error = "Voer maar 1 temperatuur in!";
+			}else if(!request.getParameter("celsius").equals("")){
+				cels = Integer.parseInt(request.getParameter("celsius"));
+				fahr = Math.round(cels * 1.8 + 32);
+			}
+			
+		}catch(NumberFormatException e){
+			error = "Voer een heel getal in(0-9)";
+		}
+	}
+	
+	%>
 	
 	
 	<!--de converter zit in onderstaande div-->
