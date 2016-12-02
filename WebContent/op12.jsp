@@ -12,6 +12,7 @@
 	<!-- JSP magic code -->
 	<%
 	int cels, fahr, result;
+	String celsValue="", fahrValue="";
 	String error="";
 	if(request.getParameter("button") !=null){
 		try{
@@ -19,7 +20,13 @@
 				error = "Voer maar 1 temperatuur in!";
 			}else if(!request.getParameter("celsius").equals("")){
 				cels = Integer.parseInt(request.getParameter("celsius"));
-				fahr = Math.round(cels * 1.8 + 32);
+				fahr = Math.round(cels * 1.8f + 32);
+				fahrValue += fahr;
+			}else if(!request.getParameter("fahrenheit").equals("")){
+				fahr = Integer.parseInt(request.getParameter("fahrenheit"));
+				cels = Math.round((fahr - 32)/1.8f);
+				celsValue += cels;
+				
 			}
 			
 		}catch(NumberFormatException e){
@@ -31,17 +38,19 @@
 	
 	
 	<!--de converter zit in onderstaande div-->
+	
 	<div class="converter">
 		<form action="op12.jsp" method="get">
 			<div class="bar">Temperature Converter</div>
 			<div class="input">
 				<p>Celsius</p>
-				<input type="text" name="celsius" value="">
+				<input type="text" name="celsius" value="<%=celsValue%>">
 			</div>
 			<div class="input">
 				<p>fahrenheit</p>
-				<input type="text" name="fahrenheit" value="">
+				<input type="text" name="fahrenheit" value="<%=fahrValue%>">
 			</div>
+			<p><%=error%>
 			<div id="gradeninvoer_knoppen">
 				<input type="submit" name="button" value="Convert">
 			</div>
