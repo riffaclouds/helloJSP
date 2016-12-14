@@ -39,9 +39,9 @@
 	
 	<!--de converter zit in onderstaande div-->
 	
-	<div class="converter">
+	<div class="shell">
 		<form action="op12.jsp" method="get">
-			<div class="bar">Temperature Converter</div>
+			<div class="bar">Temperature shell</div>
 			<div class="input">
 				<p>Celsius</p>
 				<input type="text" name="celsius" value="<%=celsValue%>">
