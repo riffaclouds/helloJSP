@@ -6,7 +6,7 @@
 </head>
 <body>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op11.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/zero.jsp">&rarr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op13.jsp">&rarr;</a>
 	<h1>Opdracht 12: temperature converter</h1>
 	
 	<!-- JSP magic code -->
@@ -59,7 +59,7 @@
 
 	<br><br>
 	<a href="http://localhost:8080/helloJSP/op11.jsp">Previous</a>
-	<a href="http://localhost:8080/helloJSP/zero.jsp">Next</a>	
+	<a href="http://localhost:8080/helloJSP/op13.jsp">Next</a>	
 	
 </body>
 </html>
