@@ -50,10 +50,11 @@
 				<p>fahrenheit</p>
 				<input type="text" name="fahrenheit" value="<%=fahrValue%>">
 			</div>
-			<p><%=error%>
+			
 			<div id="gradeninvoer_knoppen">
 				<input type="submit" name="button" value="Convert">
 			</div>
+			<p class="error"><%=error%>
 		</form>	
 	</div>
 
