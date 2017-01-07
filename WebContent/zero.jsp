@@ -8,14 +8,14 @@
 <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op13.jsp">&larr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/op15.jsp">&larr;</a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op01.jsp">&rarr;</a>
 	<p>Yoo!<br>
 	Welcome to APO!<br>
 	the current time and date is: <%=new java.util.Date() %> </p><br><br><br>
 	
 	<br><br>
-	<a href="http://localhost:8080/helloJSP/op14.jsp">Previous</a>
+	<a href="http://localhost:8080/helloJSP/op15.jsp">Previous</a>
 	<a href="http://localhost:8080/helloJSP/op01.jsp">Next</a>
 </body>
 </html>
