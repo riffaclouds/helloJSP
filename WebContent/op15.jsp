@@ -7,7 +7,7 @@
 </head>
 <body>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op14.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/zero.jsp">&rarr;</a>
+	<a class="arrow" href="http://localhost:8080/helloJSP/auto.jsp">&rarr;</a>
 	<%
 	Calculator calc = new Calculator();
 	String uitkomst = "";
@@ -68,6 +68,6 @@
 
 	<br><br>
 	<a href="http://localhost:8080/helloJSP/op14.jsp">Previous</a>
-	<a href="http://localhost:8080/helloJSP/zero.jsp">Next</a>
+	<a href="http://localhost:8080/helloJSP/auto.jsp">Next</a>
 </body>
 </html>
