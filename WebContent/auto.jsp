@@ -24,11 +24,24 @@
 	%>
 	
 	<% for(Auto cc : a.getLijst()) { %>
-		Model: <%= cc.getMerk() %> <%= cc.getType() %><br>
-		Prijs: <%= cc.getPrijs() %><br>
-		<%= cc.getFoto() %><br><br>
+		<div class=auto >
+			
+				<div class="bar"><%= cc.getMerk() %> <%= cc.getType() %></div>
+				
+					<img class="thumbnail" src="<%=cc.getFoto()%>" alt="car picture">
+					
+					<%if(cc.getPrijs() > 29999){ %>
+						<p style="color: red;">Prijs: &euro; <%= cc.getPrijs() %></p>					
+					<%}else{ %>
+						<p>Prijs: &euro; <%= cc.getPrijs() %></p>
+					<%} %>
+					
+				
+			
 		
+		</div>	
 	<% } %>
+	
 	
 	<c:forEach items="${autolijst}" var="a">
  			<c:out value="${a.getMerk}" />
