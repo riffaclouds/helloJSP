@@ -6,6 +6,8 @@
 		<title>helloJSP! JSP opdrachten</title>
 		<link rel="stylesheet" type="text/css" href="design.css">
 	</head>
+	<a href="overview.jsp">
+		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op08.jsp">&larr;</a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op11.jsp">&rarr;</a>
 	<h1>Opdracht 10: Celsius to faherenheit</h1>

@@ -5,6 +5,8 @@
 <title>JSP opdrachten</title>
 </head>
 <body>
+	<a href="overview.jsp">
+		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op12.jsp">&larr;</a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op14.jsp">&rarr;</a>
 	<h1>Opdracht 13: Calculator</h1>
