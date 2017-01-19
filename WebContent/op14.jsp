@@ -6,6 +6,8 @@
 <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
+	<a href="overview.jsp">
+		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op13.jsp">&larr;</a>
 	<a class="arrow" href="http://localhost:8080/helloJSP/op15.jsp">&rarr;</a>
 	<h1>Opdracht 14: Java class + JSP - temperature converter</h1>
