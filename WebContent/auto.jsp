@@ -17,7 +17,7 @@
 	
 	<h1>Opdracht: Auto-Winkel Selectie</h1>
 	
-	<%	AutoLijst a = new AutoLijst(); %>
+	<%	AutoLijst a = new AutoLijst();%>
 	
 	<% for(Auto cc : a.getLijst()) { %>
 		<div class=auto >
