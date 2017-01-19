@@ -17,15 +17,18 @@
 	AutoLijst a = new AutoLijst();
 	out.println(a.pri());
 	//out.println(a.getLijst());
-	out.println(a.getMerken());
+	//out.println(a.getMerken());
 	
 	
-	for(Auto k:autolijst) {
-        System.out.println(k);
-        // prints [Tommy, tiger]
-    }
 	
 	%>
+	
+	<% for(Auto cc : a.getLijst()) { %>
+		Model: <%= cc.getMerk() %> <%= cc.getType() %><br>
+		Prijs: <%= cc.getPrijs() %><br>
+		<%= cc.getFoto() %><br><br>
+		
+	<% } %>
 	
 	<c:forEach items="${autolijst}" var="a">
  			<c:out value="${a.getMerk}" />
