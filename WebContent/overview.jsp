@@ -9,21 +9,20 @@
 	<a class="arrow" href="http://localhost:8080/helloJSP/op02.jsp">&rarr;</a>
 	
 	<!-- nummerlijst links -->
-	<a href="op01.jsp">1</a>
-	<a href="op02.jsp">2</a>
-	<a href="op03.jsp">3</a>
-	<a href="op04.jsp">4</a>
-	<a href="op05.jsp">5</a>
-	<a href="op06.jsp">6</a>
-	<a href="op07.jsp">7</a>
-	<a href="op08.jsp">8</a>
-	<a href="op10.jsp">10</a>
-	<a href="op11.jsp">11</a>
-	<a href="op12.jsp">12</a>
-	<a href="op13.jsp">13</a>
-	<a href="op14.jsp">14</a>
-	<a href="op15.jsp">15</a>
-	<a href="auto.jsp">auto</a>
+	<%for(int i=1; i <= 15; i++){ %>
+		<%if(i == 9){ %>
+	
+		
+		
+		<%}else if(i < 10){ %>
+			<a class="arrow" href="op0<%=i%>.jsp"><%=i%></a>
+			
+		<%}else{ %>
+			<a class="arrow" href="op<%=i%>.jsp"><%=i%></a>
+		<%} %>
+		
+	<%} %>
+	<a class="arrow" href="auto.jsp">auto</a>
 		
 	<h1>Overview</h1>
 	
