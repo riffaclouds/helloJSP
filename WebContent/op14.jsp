@@ -8,8 +8,8 @@
 <body>
 	<a href="overview.jsp">
 		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op13.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op15.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op13.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op15.jsp">&rarr;</a>
 	<h1>Opdracht 14: Java class + JSP - temperature converter</h1>
 	<p>is the text over here > <%= Graden.makeItLower("YEAH BUDDY") %>, all in lowercase?</p><br>
 	<p>Oh YEAH!!</p>

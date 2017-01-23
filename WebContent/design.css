@@ -5,11 +5,11 @@ body{
 	
 }
 
-.arrow{
+.menu{
 	text-decoration: none;
 	font-weight: bold;
 }
-.arrow:hover{
+.menu:hover{
 	text-decoration: underline;
 	color: #E95420;
 	

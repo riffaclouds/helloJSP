@@ -8,8 +8,8 @@
 <body>
 	<a href="overview.jsp">
 		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op14.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/auto.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op14.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/auto.jsp">&rarr;</a>
 	<%
 	Calculator calc = new Calculator();
 	String uitkomst = "";

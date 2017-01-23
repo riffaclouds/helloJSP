@@ -5,8 +5,8 @@
 <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
-	<a class="arrow" href="http://localhost:8080/helloJSP/zero.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op02.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/zero.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op02.jsp">&rarr;</a>
 	<h1>Opdracht 1: valuta deling</h1>
 	<%
 	String name1 = "Refat Oemar";

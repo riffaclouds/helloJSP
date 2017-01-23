@@ -37,8 +37,8 @@
 		
 		<title>helloJSP! JSP opdrachten</title>
 	</head>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op06.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op08.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op06.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op08.jsp">&rarr;</a>
 	<h1>Opdracht 7: Multiplication Table</h1>
 	
 	<table>

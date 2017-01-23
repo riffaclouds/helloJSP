@@ -32,8 +32,8 @@
 	
 	
 	%>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op07.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op10.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op07.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op10.jsp">&rarr;</a>
 	
 	<h1>Opdracht 8/9: User controlled, multiplication table</h1>
 	<form action = "op08.jsp" method = "get">

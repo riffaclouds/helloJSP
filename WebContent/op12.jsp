@@ -7,8 +7,8 @@
 <body>
 	<a href="overview.jsp">
 		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op11.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op13.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op11.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op13.jsp">&rarr;</a>
 	<h1>Opdracht 12: temperature converter</h1>
 	
 	<!-- JSP magic code -->

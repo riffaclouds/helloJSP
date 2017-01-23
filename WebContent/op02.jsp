@@ -30,8 +30,8 @@
 		<title>JSP opdrachten</title>
 	</head>
 	<body>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op01.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op03.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op01.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op03.jsp">&rarr;</a>
 	<h1>Opdracht 2: The Time Table</h1>
 	<%
 	int sec = 1;
