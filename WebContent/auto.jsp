@@ -13,7 +13,7 @@
 	<a href="overview.jsp">
 		<img src="images/ui/overview.png" alt="overview icon" style="width: 30px; height: 30px;"></a>
 	<a class="menu" href="http://localhost:8080/helloJSP/op15.jsp">&larr;</a>
-	<a class="menu" href="http://localhost:8080/helloJSP/zero.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op16.jsp">&rarr;</a>
 	
 	<h1>Opdracht: Auto-Winkel Selectie</h1>
 	
@@ -57,22 +57,22 @@
 	%>
 	
 	<form action="auto.jsp" method="get">
+		
 		Kies merk:
 			
-		<select name="selected" value="<%=select%>">
-			<option value="Default">Default</option>
-			<!-- alle values van de merken(m) ophalen uit een arraylist, en toewijzen aan een option -->
+		<select name="selected">
+			<option value="<%=select%>"><%=select%></option>
+			<option value="Default">Alle Fabrikanten</option>
+			<!-- alle values van de merken(m) ophalen uit een arraylist, en toewijzen aan een option in een for loop -->
 			<% for(String m : a.getMerken()) { %>
 				<option value="<%=m%>"><%=m%></option>
 			<%} %>
-			
-			
-			<option value="Alfa Romeo">Alfa Romeo</option>
-			<option value="Tesla">Tesla</option>
-		
 		</select>
 		<br>
 		
+		<!-- als er een bedrag is ingevuld bij minp(rijs) en/of bij maxp(rijs) -->
+		
+		<!-- als de velden leeg zijn -->
 		Minimumprijs: <input type="text" name="minp" value=""> 
 		Maximumprijs: <input type="text" name="maxp" value=""><br>
 		<input type="submit" name="knop" value="OK"><br><br>
@@ -90,8 +90,9 @@
 		
 		<!-- deze loop stelt een lijst samen -->
 		<% for(Auto cc : a.getLijst()) { %>
-			
+				<!-- als de currentCar prijs hoger is dan minimum prijs en maximum prijs -->
 				<%if(cc.getPrijs() > minPrice && cc.getPrijs() < maxPrice) { %>
+					<!-- als er een merk is geselecteerd uit de dropdown menu -->
 					<%if(cc.getMerk().equals(select)){ %>
 					<div class=auto >
 					<div class="bar"><%= cc.getMerk() %> <%= cc.getType() %></div>
@@ -104,13 +105,14 @@
 							<p>Prijs: &euro; <%= cc.getPrijs() %></p>
 						<%} %>
 						</div>
-												
+				<!-- of als merk op default staat, worden auto's van alle fabrikanten geprint -->							
 				<%}else if(select.equals("Default")){%>
 					<div class=auto >
 					<div class="bar"><%= cc.getMerk() %> <%= cc.getType() %></div>
 				
 						<img class="thumbnail" src="<%=cc.getFoto()%>" alt="car picture">
-					
+						
+						<!-- prijs word rood als het hoger is dan 29999 -->
 						<%if(cc.getPrijs() > 29999){ %>
 							<p style="color: red;">Prijs: &euro; <%= cc.getPrijsFormat() %></p>					
 						<%}else{ %>
@@ -129,6 +131,7 @@
 		<% } %>
 		<input type="hidden" name=minPrice value="<%=minPrice%>">
 		<input type="hidden" name=maxPrice value="<%=maxPrice%>">
+		
 	</form>
 	
 	
@@ -137,6 +140,6 @@
 
 	<br><br>
 	<a href="http://localhost:8080/helloJSP/op15.jsp">Previous</a>
-	<a href="http://localhost:8080/helloJSP/zero.jsp">Next</a>	
+	<a href="http://localhost:8080/helloJSP/op16.jsp">Next</a>	
 </body>
 </html>

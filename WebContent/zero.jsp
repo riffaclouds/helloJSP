@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
-	<a class="arrow" href="http://localhost:8080/helloJSP/auto.jsp">&larr;</a>
-	<a class="arrow" href="http://localhost:8080/helloJSP/op01.jsp">&rarr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/auto.jsp">&larr;</a>
+	<a class="menu" href="http://localhost:8080/helloJSP/op01.jsp">&rarr;</a>
 	<p>Yoo!<br>
 	Welcome to APO!<br>
 	the current time and date is: <%=new java.util.Date() %> </p><br><br><br>

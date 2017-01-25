@@ -48,8 +48,7 @@ private ArrayList<Auto> autolijst;
         autolijst.add(subaru1);
         Auto subaru2 = new Auto("Subaru", "Impreza", 28345, 
           "images/autos/subaruimpreza.jpg");
-        autolijst.add(subaru2);
-        
+        autolijst.add(subaru2);        
         Auto mercedes1 = new Auto("Mercedes", "E 63", 110995, 
                 "images/autos/mercedede63.png");
         autolijst.add(mercedes1);
@@ -57,32 +56,29 @@ private ArrayList<Auto> autolijst;
                 "images/autos/mercedescla45.jpg");
         autolijst.add(mercedes2);
         Auto mercedes3 = new Auto("Mercedes", "E 230", 110995, 
-                "images/autos/mercedede230.png");
+                "images/autos/mercedese230.jpg");
         autolijst.add(mercedes3);
-        Auto mercedes4 = new Auto("Mercedes", "C 350", 190780, 
-                "images/autos/mercedescc350.jpg");
+        Auto mercedes4 = new Auto("Mercedes", "C 250", 190780, 
+                "images/autos/mercedesc250.jpg");
         autolijst.add(mercedes4);        
-        
         Auto ferrari1 = new Auto("Ferrari", "California", 28345, 
-                "images/autos/subaruimpreza.jpg");
+                "images/autos/ferraricalifornia.jpg");
         autolijst.add(ferrari1);
         Auto ferrari2 = new Auto("Ferrari", "458", 28345, 
-                "images/autos/subaruimpreza.jpg");
+                "images/autos/ferrari458.jpg");
         autolijst.add(ferrari2);
+        Auto ferrari3 = new Auto("Ferrari", "612 GTO", 350500, 
+                "images/autos/ferrari612.jpg");
+              autolijst.add(ferrari3);        
         Auto lotus1 = new Auto("Lotus", "Elise S CR", 28345, 
-        		"images/autos/subaruimpreza.jpg");
+        		"images/autos/lotuselisecr.jpg");
         autolijst.add(lotus1);
         Auto lotus2 = new Auto("Lotus", "Elise S CR", 28345, 
-        		"images/autos/subaruimpreza.jpg");
+        		"images/autos/lotuselisescr.jpg");
         autolijst.add(lotus2);
         Auto volvo1 = new Auto("Volvo", "V 40", 28345, 
-        		"images/autos/subaruimpreza.jpg");
+        		"images/autos/volvov40.jpg");
         autolijst.add(volvo1);
-              
-              
-        Auto ferrari3 = new Auto("Ferrari", "612 GTO", 350500, 
-          "images/autos/ferrari612.jpg");
-        autolijst.add(ferrari3);
         Auto citroen1 = new Auto("Citroen", "2CV", 459, 
           "images/autos/citroen2cv.jpg");
         autolijst.add(citroen1);
