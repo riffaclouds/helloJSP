@@ -59,9 +59,9 @@
 	<form action="auto.jsp" method="get">
 		Kies merk:
 			
-		<select name="selected">
+		<select name="selected" value="<%=select%>">
 			<option value="Default">Default</option>
-			<!-- alle values van de merken ophalen uit een arraylist, en toewijzen aan een option -->
+			<!-- alle values van de merken(m) ophalen uit een arraylist, en toewijzen aan een option -->
 			<% for(String m : a.getMerken()) { %>
 				<option value="<%=m%>"><%=m%></option>
 			<%} %>
@@ -112,9 +112,9 @@
 						<img class="thumbnail" src="<%=cc.getFoto()%>" alt="car picture">
 					
 						<%if(cc.getPrijs() > 29999){ %>
-							<p style="color: red;">Prijs: &euro; <%= cc.getPrijs() %></p>					
+							<p style="color: red;">Prijs: &euro; <%= cc.getPrijsFormat() %></p>					
 						<%}else{ %>
-							<p>Prijs: &euro; <%= cc.getPrijs() %></p>
+							<p>Prijs: &euro; <%= cc.getPrijsFormat() %></p>
 						<%} %>
 						</div>
 				<%} %>

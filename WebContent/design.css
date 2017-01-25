@@ -60,6 +60,6 @@ a:visited{
 	}
 	
 .thumbnail{
-	with: 50px;
+	width: 150px;
 	height: 80px;
 	}
