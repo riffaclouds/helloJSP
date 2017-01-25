@@ -20,7 +20,7 @@
 	<%	
 	AutoLijst a = new AutoLijst();
 	
-	int minPrice = Integer.MIN_VALUE;
+	int minPrice = 0;
 	int maxPrice = Integer.MAX_VALUE;
 	String select = "Default";
 	String errorMin = "";
@@ -33,7 +33,7 @@
 			if(!request.getParameter("minp").equals("")){
 				minPrice = Integer.parseInt(request.getParameter("minp"));
 			}else if(request.getParameter("minp").equals("")){
-				minPrice = Integer.MIN_VALUE;
+				minPrice = 0;
 			}
 			
 		}catch(NumberFormatException e){
@@ -80,7 +80,7 @@
 		<%if(request.getParameter("knop") != null){ %>
 			<p  class="error"><%=errorMin%> <%=errorMax%> </p>
 			<p>Filter > min: <%=minPrice%>  max: <%=maxPrice%></p>
-			java select variable: <%=select %><br><br>
+			Fabrikant: <%=select %><br><br>
 			
 		<%}%>
 		
@@ -91,7 +91,8 @@
 		<!-- deze loop stelt een lijst samen -->
 		<% for(Auto cc : a.getLijst()) { %>
 			
-				<%if(cc.getMerk().equals(select)){ %>
+				<%if(cc.getPrijs() > minPrice && cc.getPrijs() < maxPrice) { %>
+					<%if(cc.getMerk().equals(select)){ %>
 					<div class=auto >
 					<div class="bar"><%= cc.getMerk() %> <%= cc.getType() %></div>
 				
@@ -104,6 +105,20 @@
 						<%} %>
 						</div>
 												
+				<%}else if(select.equals("Default")){%>
+					<div class=auto >
+					<div class="bar"><%= cc.getMerk() %> <%= cc.getType() %></div>
+				
+						<img class="thumbnail" src="<%=cc.getFoto()%>" alt="car picture">
+					
+						<%if(cc.getPrijs() > 29999){ %>
+							<p style="color: red;">Prijs: &euro; <%= cc.getPrijs() %></p>					
+						<%}else{ %>
+							<p>Prijs: &euro; <%= cc.getPrijs() %></p>
+						<%} %>
+						</div>
+				<%} %>
+				
 				<%}%>
 			
 
