@@ -1,3 +1,6 @@
+<%@ page import="com.helloJSP.Driver" %>
+<%@ page import="com.helloJSP.AutoLijst" %>
+
 <!DOCTYPE html>
 <html>
 	<body>
@@ -12,9 +15,9 @@
 	<a class="menu" href="http://localhost:8080/helloJSP/zero.jsp">&rarr;</a>
 	<h1>Opdracht 16: Connectie met de DataBase!</h1>
 	
-	
-	
-	
+	<p>zie je hieronder een true waarde?</p>
+	<%AutoLijst b = new AutoLijst();
+	b.check();%>
 	
 	
 	<br><br>

@@ -20,6 +20,9 @@
 	<%	
 	AutoLijst a = new AutoLijst();
 	
+	//ik wil alleen the lucid car selecteren en printen
+	//AutoLijst lucid = new AutoLijst();
+	
 	int minPrice = 0;
 	int maxPrice = Integer.MAX_VALUE;
 	String select = "Default";
@@ -53,6 +56,8 @@
 		select = request.getParameter("selected");
 		
 	}
+	
+	//out.println(autolijst.get(2));
 
 	%>
 	
@@ -70,16 +75,26 @@
 		</select>
 		<br>
 		
-		<!-- als er een bedrag is ingevuld bij minp(rijs) en/of bij maxp(rijs) -->
+		<!-- bedrag is ingevuld bij minp(rijs) -->
+		<%if(request.getParameter("knop") != null && !request.getParameter("minp").equals("")){ %>
+			MinimumPrijs: <input type="text" name="minp" value="<%=minPrice%>">
+		<!-- als het veld leeg is -->
+		<%}else{ %> 
+		MinimumPrijs: <input type="text" name="minp" value="">
+		<%} %>
+		<br>
 		
-		<!-- als de velden leeg zijn -->
-		Minimumprijs: <input type="text" name="minp" value=""> 
-		Maximumprijs: <input type="text" name="maxp" value=""><br>
+		<%if(request.getParameter("knop") != null && !request.getParameter("maxp").equals("")){ %>
+			MaximumPrijs: <input type="text" name="maxp" value="<%=maxPrice%>">
+		<%}else{ %>
+		MaximumPrijs: <input type="text" name="maxp" value="">
+		<%} %>
+		<br>
 		<input type="submit" name="knop" value="OK"><br><br>
 		
 		<%if(request.getParameter("knop") != null){ %>
 			<p  class="error"><%=errorMin%> <%=errorMax%> </p>
-			<p>Filter > min: <%=minPrice%>  max: <%=maxPrice%></p>
+			<p>Filter: min: <%=minPrice%>  max: <%=maxPrice%></p>
 			Fabrikant: <%=select %><br><br>
 			
 		<%}%>
@@ -100,9 +115,9 @@
 						<img class="thumbnail" src="<%=cc.getFoto()%>" alt="car picture">
 					
 						<%if(cc.getPrijs() > 29999){ %>
-							<p style="color: red;">Prijs: &euro; <%= cc.getPrijs() %></p>					
+							<p style="color: red;">Prijs: &euro; <%= cc.getPrijsFormat() %></p>					
 						<%}else{ %>
-							<p>Prijs: &euro; <%= cc.getPrijs() %></p>
+							<p>Prijs: &euro; <%= cc.getPrijsFormat() %></p>
 						<%} %>
 						</div>
 				<!-- of als merk op default staat, worden auto's van alle fabrikanten geprint -->							

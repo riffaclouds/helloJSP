@@ -1,9 +1,12 @@
 package com.helloJSP;
 
+
 import java.util.ArrayList;
+
 
 public class AutoLijst {
 private ArrayList<Auto> autolijst;
+
     
     /**
      * Constructor die de lijst aanmaakt en auto's toevoegt
@@ -84,10 +87,7 @@ private ArrayList<Auto> autolijst;
         autolijst.add(citroen1);
         Auto mini1 = new Auto("Mini", "Cooper", 34495, 
           "images/autos/minicooper.jpg");
-        autolijst.add(mini1);
-        
-              
-        
+        autolijst.add(mini1);      
      }
     
     /**
@@ -97,15 +97,7 @@ private ArrayList<Auto> autolijst;
     public ArrayList<Auto> getLijst() {
         return autolijst;
     }
-    
-    public String pri(){
-    	String s = "testing 1, 2!<br><br>";
-    	
-    	return s;
-    }
-    
-    
-    
+      
     /**
      * Ten behoeve van het select merk input veld
      * @return een lijst met alle unieke merken
@@ -120,5 +112,6 @@ private ArrayList<Auto> autolijst;
         }
         return merken;
     }
+    
 
 }
