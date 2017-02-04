@@ -16,8 +16,7 @@
 	<h1>Opdracht 16: Connectie met de DataBase!</h1>
 	
 	<p>zie je hieronder een true waarde?</p>
-	<%AutoLijst b = new AutoLijst();
-	b.check();%>
+	
 	
 	
 	<br><br>
